@@ -98,3 +98,19 @@ def save_encoders(df, nome_colunas):
         joblib.dump(label_encoder, f"./objects/labelencoder{nome_coluna}.joblib")
 
     return df
+
+#carregar scalers para API
+def load_scalers(df, nome_colunas):
+    for nome_coluna in nome_colunas:
+        nome_arquivo_scaler = f"./objects/scaler{nome_coluna}.joblib"
+        scaler = joblib.load(nome_arquivo_scaler)
+        df[nome_coluna] = scaler.transform(df[[nome_coluna]])
+    return df
+
+#carregar enconders para API  
+def load_encoders(df, nome_colunas):
+    for nome_coluna in nome_colunas:
+        nome_arquivo_encoder = f"./objects/labelencoder{nome_coluna}.joblib"
+        label_enconder = joblib.load(nome_arquivo_encoder)
+        df[nome_coluna] = label_enconder.transform(df[[nome_coluna]])   
+    return df
