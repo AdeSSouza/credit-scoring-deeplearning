@@ -1,3 +1,5 @@
+#consulta a ser realizada no banco de dados remoto
+
 consulta_sql = '''
 SELECT c.Profissao,
        c.TempoProfissao,
