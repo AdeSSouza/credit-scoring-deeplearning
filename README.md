@@ -25,6 +25,8 @@ O modelo foi desenvolvido seguindo critérios estritos de viabilidade econômica
 * **Deploy e Produção:** Disponibilização do modelo final através de uma API REST para consumo em tempo real.
 * **Hospedagem:** Provisionamento da aplicação em ambiente de nuvem utilizando instâncias AWS EC2.
 
+![Métricas do Modelo](assets/metricas_modelo.png)
+
 ---
 
 ## ⚙️ Pipeline de Engenharia e Pré-processamento de Dados
@@ -75,6 +77,8 @@ Abra dois terminais na pasta raiz do projeto e execute:
   ```bash
   streamlit run 8API/webapp.py
   ```
+
+![Interface do Webapp](assets/streamlit_1.png) ![Interface do Webapp](assets/streamlit_2.png)
 
 ---
 *Projeto desenvolvido com foco prático no domínio técnico de ferramentas de mercado para Ciência de Dados.*
