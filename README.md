@@ -18,12 +18,12 @@ Este projeto desenvolve uma solução para analisar dados históricos de cliente
 ---
 
 ## 🎯 Requisitos e Métricas de Sucesso (KPIs)
-
 O modelo foi desenvolvido seguindo critérios estritos de viabilidade econômica e tolerância ao risco:
 * **Métricas Alvo:** Precision esperada de ≥ 80% (mínima de 70%) e Recall esperado de ≥ 75% (mínima de 70%).
+* **Resultados Obtidos (Base de Teste):** Acurácia geral de **83%**. Para a classe alvo (Inadimplência), o modelo atingiu **85% de Precision** e **89% de Recall** (F1-Score de 0.87), superando os critérios mínimos estipulados.
 * **Gerenciamento de Risco:** Implementação de limiar de decisão (Classification Threshold) flexível a partir de 50%, permitindo o ajuste fino entre apetite de risco e taxa de aprovação.
-* **Deploy e Produção:** Disponibilização do modelo final através de uma API REST integrada a uma interface local em Streamlit para consumo em tempo real.
-* **Hospedagem:** Estrutura preparada para provisionamento em ambiente de nuvem utilizando instâncias AWS EC2.
+* **Deploy e Produção:** Disponibilização do modelo final através de uma API REST para consumo em tempo real.
+* **Hospedagem:** Provisionamento da aplicação em ambiente de nuvem utilizando instâncias AWS EC2.
 
 ---
 
